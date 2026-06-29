@@ -29,6 +29,9 @@ public class Movie : BaseEntity
 
     public DateTime ReleaseDate { get; private set; }
 
+    //Navigation Properties
+    public virtual ICollection<ShowTime> Shows { get; private set; }
+
     protected override void Validate()
     {
         if (string.IsNullOrWhiteSpace(Title))

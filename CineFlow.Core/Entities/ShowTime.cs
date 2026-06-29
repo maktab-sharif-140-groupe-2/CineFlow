@@ -23,6 +23,9 @@ public class ShowTime : BaseEntity
     public decimal BasePrice { get; private set; }
     public ShowStatus Status { get; private set; }
 
+    //Navigation Properties
+    public virtual Movie Movie { get; private set; }
+
     protected override void Validate()
     {
         if (string.IsNullOrWhiteSpace(MovieId.ToString()))
@@ -31,7 +34,7 @@ public class ShowTime : BaseEntity
         if (string.IsNullOrWhiteSpace(HallId.ToString()))
             throw new DomainException("HallId Is Requirment", "showTime.required_hallId ");
 
-        if ((EndTime-StartTime).TotalHours>6 || (EndTime - StartTime).TotalHours==0&& (EndTime - StartTime).Minutes<30)
+        if ((EndTime - StartTime).TotalHours > 6 || (EndTime - StartTime).TotalHours == 0 && (EndTime - StartTime).Minutes < 30)
             throw new DomainException("Maxmium Show Time Is 6 Hours And Minmum TimeShow Is 30 Minute", "ShowTime.ValidShowTime_ShowDourationTime");
 
         if (BasePrice <= 0)

@@ -20,6 +20,9 @@ public class Cinema : BaseEntity
 
     public string City { get; private set; }
 
+    //Navigation Properties
+    public virtual ICollection<Hall> Halls { get; private set; }
+
     protected override void Validate()
     {
         if (string.IsNullOrWhiteSpace(Name))
@@ -37,7 +40,7 @@ public class Cinema : BaseEntity
         if (Address.Length < 3 || Address.Length > 100)
             throw new DomainException("cinema address length must be higher than 3 or lower than 100 characters", "cinema.invalid_address_length");
 
-        if (City.Length < 3 || City.Length > 230)
+        if (City.Length < 3 || City.Length > 30)
             throw new DomainException("cinema city length must be higher than 3 or lower than 30 characters", "cinema.invalid_city_length");
     }
 }

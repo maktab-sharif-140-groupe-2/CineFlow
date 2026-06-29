@@ -1,4 +1,5 @@
 ﻿using CineFlow.Core.Common;
+using CineFlow.Core.Enums;
 using CineFlow.Core.Exceptions;
 
 namespace CineFlow.Core.Entities;
@@ -17,6 +18,13 @@ public class Customer : BaseEntity
     public string LastName { get; private set; }
     public string PhoneNumber { get; private set; }
     public string Email { get; private set; }
+    public string PasswordHash { get; private set; }
+    public CustomerRole Role { get; private set; }
+    
+
+    public List<Ticket> Tickets { get; private set; }
+   
+
 
     protected override void Validate()
     {

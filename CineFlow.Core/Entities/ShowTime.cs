@@ -23,6 +23,9 @@ public class ShowTime : BaseEntity
     public decimal BasePrice { get; private set; }
     public ShowStatus Status { get; private set; }
 
+    public List<Ticket> Tickets { get; private set; }
+    public Hall Hall { get; private set; }
+
     //Navigation Properties
     public virtual Movie Movie { get; private set; }
 

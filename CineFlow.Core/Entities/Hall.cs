@@ -25,6 +25,9 @@ public class Hall : BaseEntity
     //Navigation Porperties 
     public virtual Cinema Cinema { get; private set; }
 
+    public List<ShowTime> ShowTimes { get; private set; }
+
+    public List<Seat> Seats { get; private set; }
 
     protected override void Validate()
     {

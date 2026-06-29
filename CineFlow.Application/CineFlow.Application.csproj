@@ -1,0 +1,35 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net9.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="Abstractions\Persistance\" />
+    <Folder Include="DependencyInjection\" />
+    <Folder Include="Features\Cinemas\Dto\" />
+    <Folder Include="Features\Cinemas\Interface\" />
+    <Folder Include="Features\Cinemas\Implementation\" />
+    <Folder Include="Features\Customers\Dto\" />
+    <Folder Include="Features\Customers\Implementation\" />
+    <Folder Include="Features\Customers\Interface\" />
+    <Folder Include="Features\Halls\Dto\" />
+    <Folder Include="Features\Halls\Implementation\" />
+    <Folder Include="Features\Halls\Interface\" />
+    <Folder Include="Features\Movies\Dto\" />
+    <Folder Include="Features\Movies\Implementation\" />
+    <Folder Include="Features\Movies\Interface\" />
+    <Folder Include="Features\Seats\Dto\" />
+    <Folder Include="Features\Seats\Implementation\" />
+    <Folder Include="Features\Seats\Interface\" />
+    <Folder Include="Features\ShowTimes\Dto\" />
+    <Folder Include="Features\ShowTimes\Implementation\" />
+    <Folder Include="Features\ShowTimes\Interface\" />
+    <Folder Include="Features\Tickets\Dto\" />
+    <Folder Include="Features\Tickets\Implementation\" />
+    <Folder Include="Features\Tickets\Interface\" />
+  </ItemGroup>
+
+</Project>

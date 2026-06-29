@@ -1,0 +1,14 @@
+<Solution>
+  <Folder Name="/1-Core/">
+    <Project Path="CineFlow.Core/CineFlow.Core.csproj" />
+  </Folder>
+  <Folder Name="/2-Application/">
+    <Project Path="CineFlow.Application/CineFlow.Application.csproj" />
+  </Folder>
+  <Folder Name="/3-Infrastructure/">
+    <Project Path="CineFlow.DataAccess/CineFlow.DataAccess.csproj" />
+  </Folder>
+  <Folder Name="/4-EndPoint/">
+    <Project Path="CineFlow.WebApplication/CineFlow.WebApplication.csproj" />
+  </Folder>
+</Solution>

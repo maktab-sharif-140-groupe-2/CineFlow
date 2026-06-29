@@ -23,6 +23,10 @@ public class Ticket : BaseEntity
     public TicketStatus Status { get; private set; }
     public DateTime PurchaseDate { get; private set; }
 
+    public Seat Seat { get; private set; }
+    public Customer Customer { get; private set; }
+    public ShowTime ShowTime { get; private set; }
+
     protected override void Validate()
     {
         if (string.IsNullOrWhiteSpace(CustomerId.ToString()))

@@ -6,12 +6,13 @@ namespace CineFlow.Core.Entities;
 
 public class Customer : BaseEntity
 {
-    public Customer(string firstName, string lastName, string phoneNumber, string email)
+    public Customer(string firstName, string lastName, string phoneNumber, string email, string passwordHash)
     {
         FirstName = firstName;
         LastName = lastName;
         PhoneNumber = phoneNumber;
         Email = email;
+        PasswordHash = passwordHash;
     }
 
     public string FirstName { get; private set; }

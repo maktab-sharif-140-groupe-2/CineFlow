@@ -2,6 +2,9 @@
 
 namespace CineFlow.Application.Abstractions.Persistance;
 
-public interface ICustomerRepository : IGenericRepository<Customer>
+public interface ICustomerRepository:IGenericRepository<Customer>
 {
+   
+
+
 }

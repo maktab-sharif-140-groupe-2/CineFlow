@@ -11,9 +11,8 @@
     <Folder Include="Features\Cinemas\Dto\" />
     <Folder Include="Features\Cinemas\Interface\" />
     <Folder Include="Features\Cinemas\Implementation\" />
-    <Folder Include="Features\Customers\Dto\" />
-    <Folder Include="Features\Customers\Implementation\" />
-    <Folder Include="Features\Customers\Interface\" />
+    <Folder Include="Features\Customers\Dto\Update\" />
+    <Folder Include="Features\Customers\Dto\Response\" />
     <Folder Include="Features\Halls\Dto\" />
     <Folder Include="Features\Halls\Implementation\" />
     <Folder Include="Features\Halls\Interface\" />

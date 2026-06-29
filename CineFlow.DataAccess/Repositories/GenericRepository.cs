@@ -1,4 +1,5 @@
-﻿using CineFlow.Core.Common;
+﻿using CineFlow.Application.Abstractions.Persistance;
+using CineFlow.Core.Common;
 using CineFlow.DataAccess.Persistance.ApplicationDb;
 using Microsoft.EntityFrameworkCore;
 using System.Linq.Expressions;

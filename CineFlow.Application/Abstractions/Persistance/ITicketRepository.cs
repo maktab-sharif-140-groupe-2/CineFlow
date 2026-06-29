@@ -1,5 +1,7 @@
-﻿namespace CineFlow.Application.Abstractions.Persistance;
+﻿using CineFlow.Core.Entities;
 
-public interface ITicketRepository
+namespace CineFlow.Application.Abstractions.Persistance;
+
+public interface ITicketRepository : IGenericRepository<Ticket>
 {
 }

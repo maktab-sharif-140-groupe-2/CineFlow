@@ -1,5 +1,12 @@
-﻿namespace CineFlow.DataAccess.Repositories;
+﻿using CineFlow.Application.Abstractions.Persistance;
+using CineFlow.Core.Entities;
+using CineFlow.DataAccess.Persistance.ApplicationDb;
 
-public class MovieRepository
+namespace CineFlow.DataAccess.Repositories;
+
+public class MovieRepository : GenericRepository<Movie>, IMovieRepository
 {
+    public MovieRepository(AppDbContext dbContext) : base(dbContext)
+    {
+    }
 }

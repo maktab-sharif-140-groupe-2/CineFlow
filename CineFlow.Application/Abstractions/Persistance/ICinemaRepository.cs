@@ -1,5 +1,7 @@
-﻿namespace CineFlow.Application.Abstractions.Persistance;
+﻿using CineFlow.Core.Entities;
 
-public interface ICinemaRepository
+namespace CineFlow.Application.Abstractions.Persistance;
+
+public interface ICinemaRepository : IGenericRepository<Cinema>
 {
 }

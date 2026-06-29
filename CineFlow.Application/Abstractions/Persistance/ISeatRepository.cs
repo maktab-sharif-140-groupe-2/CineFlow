@@ -1,5 +1,7 @@
-﻿namespace CineFlow.Application.Abstractions.Persistance;
+﻿using CineFlow.Core.Entities;
 
-public interface ISeatRepository
+namespace CineFlow.Application.Abstractions.Persistance;
+
+public interface ISeatRepository : IGenericRepository<Seat>
 {
 }

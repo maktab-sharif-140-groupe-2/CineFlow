@@ -1,5 +1,12 @@
-﻿namespace CineFlow.DataAccess.Repositories;
+﻿using CineFlow.Application.Abstractions.Persistance;
+using CineFlow.Core.Entities;
+using CineFlow.DataAccess.Persistance.ApplicationDb;
 
-public class CustomerRepository
+namespace CineFlow.DataAccess.Repositories;
+
+public class CustomerRepository : GenericRepository<Customer>, ICustomerRepository
 {
+    public CustomerRepository(AppDbContext dbContext) : base(dbContext)
+    {
+    }
 }

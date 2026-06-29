@@ -24,8 +24,6 @@
     <Folder Include="Features\Seats\Implementation\" />
     <Folder Include="Features\Seats\Interface\" />
     <Folder Include="Features\ShowTimes\Dto\" />
-    <Folder Include="Features\ShowTimes\Implementation\" />
-    <Folder Include="Features\ShowTimes\Interface\" />
     <Folder Include="Features\Tickets\Dto\" />
     <Folder Include="Features\Tickets\Implementation\" />
     <Folder Include="Features\Tickets\Interface\" />

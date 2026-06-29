@@ -32,4 +32,8 @@
     <Folder Include="Features\Tickets\Interface\" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\CineFlow.Core\CineFlow.Core.csproj" />
+  </ItemGroup>
+
 </Project>

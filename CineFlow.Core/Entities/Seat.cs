@@ -6,7 +6,7 @@ namespace CineFlow.Core.Entities;
 
 public class Seat : BaseEntity
 {
-    public Seat(int row, int number, SeatType type, int hallId)
+    public Seat(int row, int number, SeatType type, Guid hallId)
     {
         Row = row;
         Number = number;
@@ -23,7 +23,7 @@ public class Seat : BaseEntity
     public SeatType Type { get; private set; }
 
     //Foriegn Key
-    public int HallId { get; private set; }
+    public Guid HallId { get; private set; }
 
     //Navigtion Properties
     public virtual Hall Hall { get; private set; }
@@ -35,8 +35,5 @@ public class Seat : BaseEntity
 
         if (Number < 0 || Number > 3000)
             throw new DomainException("Seat Number must be higher than 0 or lower than 3000", "hall.invalid_number_interval");
-
-        if (HallId < 0)
-            throw new DomainException("Seat HallId must be higher than 0", "hall.invalid_hallId_interval");
     }
 }

@@ -9,11 +9,11 @@ public class ShowTimeModelBuilderConfiguration : BaseModelBuilderConfiguration<S
     protected override void ApplyEntityConfiguration(EntityTypeBuilder<ShowTime> builder)
     {
 
-        builder.Property(x => x.BasePrice).HasColumnType("decimal(0,12)").IsRequired();
+        builder.Property(x => x.BasePrice).HasColumnType("decimal(10,4)").IsRequired();
 
-        builder.HasMany(x=> x.Tickets)
-            .WithOne(x=> x.ShowTime)
-            .HasForeignKey(x=> x.ShowTimeId)
+        builder.HasMany(x => x.Tickets)
+            .WithOne(x => x.ShowTime)
+            .HasForeignKey(x => x.ShowTimeId)
             .IsRequired()
             .OnDelete(DeleteBehavior.Restrict);
 

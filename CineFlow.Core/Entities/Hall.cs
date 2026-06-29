@@ -5,7 +5,7 @@ namespace CineFlow.Core.Entities;
 
 public class Hall : BaseEntity
 {
-    public Hall(string name, int capacity, int cinemaId)
+    public Hall(string name, int capacity, Guid cinemaId)
     {
         Name = name;
         Capacity = capacity;
@@ -20,7 +20,7 @@ public class Hall : BaseEntity
     public int Capacity { get;private set; }
 
     //Forigen Key
-    public int CinemaId { get; private set; }
+    public Guid CinemaId { get; private set; }
 
     //Navigation Porperties 
     public virtual Cinema Cinema { get; private set; }
@@ -36,9 +36,6 @@ public class Hall : BaseEntity
 
         if (Name.Length < 3 || Name.Length > 25)
             throw new DomainException("hall name length must be higher than 3 or lower than 25 characters", "hall.invalid_name_length");
-
-        if (CinemaId < 0)
-            throw new DomainException("hall CinemaId must be higher than 0", "hall.invalid_cinemaId_interval");
 
         if (Capacity < 0 || Capacity > 30_000)
             throw new DomainException("hall Capacity must be higher than 0 or lower than 30_000", "hall.invalid_capacity_interval");

@@ -8,7 +8,7 @@ public class TicketModelBuilderConfiguration : BaseModelBuilderConfiguration<Tic
 {
     protected override void ApplyEntityConfiguration(EntityTypeBuilder<Ticket> builder)
     {
-        builder.Property(x => x.Price).HasColumnType("decimal(0,12)").IsRequired();
+        builder.Property(x => x.Price).HasColumnType("decimal(10,4)").IsRequired();
 
         builder.HasOne(x => x.Seat)
             .WithOne()
